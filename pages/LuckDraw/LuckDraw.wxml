@@ -1,0 +1,68 @@
+<view class="container">
+  <view class="bg">
+    <image src="img/bg.png" mode="widthFix"></image>
+  </view>
+  <view class="content">
+    <view class="rule r" catchtap='rule'>
+      <text>规则说明</text>
+    </view>
+    <view class="step">
+      <view class="l">
+        <text>当前步数:</text>
+        <text>{{stepNum}}</text>
+      </view>
+      <view class="r">
+        <text>消耗{{cusStep}}步翻牌</text>
+      </view>
+    </view>
+    <view class="num">
+      <view wx:for="{{DrawList}}" catchtap='statDraw' wx:key="{{item.id}}" animation="{{item.animationData}}" id="{{index}}">
+        <view  style="transform:rotateY({{item.isClick ||isStat?'0':front}}deg)" transitionend="end">
+          <image src="{{item.src}}" mode='widthFix' style='margin-top:{{item.top}}' class="active"></image>
+          <text class="active">{{item.text}}</text>
+        </view>
+        <view class="{{!(item.isClick ||isStat)?'con':'front'}}" style="transform:rotateY({{!(item.isClick ||isStat)?'0':front}}deg)">
+          <text>{{index+1}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="img">
+      <image src='img/lamp.png' mode="widthFix"></image>
+    </view>
+    
+    <view class="record">
+      <view class="title">
+        <text class="link"></text>
+        <text>中奖记录</text>
+        <text class="link"></text>
+      </view>
+      <view class="box">
+        <view class="con" style='top:{{deviation}}px'>
+          <view class="a" animation="{{animationData}}">
+            <view wx:for="{{boxList}}" style="background:{{item.bgColor}}" wx:key="{{this}}">
+              <text class="userName">{{item.userName}}</text>
+              <text class="proName">{{item.proName}}</text>
+              <text class="r">{{item.time}}</text>
+            </view>
+            <view wx:for="{{boxList}}" style="background:{{item.bgColor}}" wx:key="{{this}}">
+              <text class="userName">{{item.userName}}</text>
+              <text class="proName">{{item.proName}}</text>
+              <text class="r">{{item.time}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="model" hidden='{{modelHidden}}'>
+      <view class="content_model">
+        <view class="c">
+          <text>您的步数已不足，请分享</text>
+        </view>
+        <view>
+          <button class="cancel" catchtap='cancel'>取消</button>
+          <button  open-type="share">分享</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,54 @@
+<view class="container">
+  <view class="top" style='background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAFyCAYAAACqUV9vAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkI4NjVDNEI2RDQ0NDExRTg4MTIxQTFGQjAyRDMyNzQyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkI4NjVDNEI3RDQ0NDExRTg4MTIxQTFGQjAyRDMyNzQyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Qjg2NUM0QjRENDQ0MTFFODgxMjFBMUZCMDJEMzI3NDIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Qjg2NUM0QjVENDQ0MTFFODgxMjFBMUZCMDJEMzI3NDIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7AcVDqAAAHW0lEQVR42uzd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") no-repeat;'>
+    <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image> -->
+    <view class="img">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+  <view class="obj">
+    <view>
+        <text>{{obj.SignIn}}</text>
+        <text class="unit">天</text>
+        <text class="bottom">连续签到</text>
+    </view>
+    <view>
+      <text>{{obj.renren}}</text>
+      <text class="bottom">人人币</text>
+    </view>
+     <view>
+      <text>{{obj.InviteNum}}</text>
+      <text class="bottom">邀请人数</text>
+    </view>
+  </view>
+  <view class="baby">
+    <view class="mybaby" bindtap='navigateTo'>
+      <text>我的宝贝</text>
+      <image src="../../img/right.png" class="icon r"></image>
+      <text class="r">我领到的宝贝</text>
+    </view>
+    <view class='goods'>
+      <view id="1" bindtap='navigateTo'>
+          <image src="img/elivery.png" mode='widthFix'></image>
+          <text>待发货</text>
+      </view>
+      <view bindtap='navigateTo'>
+          <image src="img/shipped.png" mode='widthFix'></image>
+          <text>已发货</text>
+      </view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="list_item" wx:for="{{list}}" wx:key="id" bindtap="navigateToRen" id="{{index+1}}">
+      <image src="{{item.src}}" mode='widthFix' class="img"></image>
+      <text>{{item.name}}</text>
+      <image src="../../img/right.png" class="icon r"></image>
+    </view>
+    <button open-type='contact' class="list_item_btn">
+      <image src="img/cus.png" mode='widthFix' class="img"></image>
+      <text>联系客服</text>
+      <image src="../../img/right.png" class="icon r"></image>
+    </button>
+  </view>
+     
+</view>
+

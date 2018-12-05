@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="info">
+    <image src="img/bg.png" mode="widthFix"></image>
+    <text class="num">{{num}}</text>
+    <text>可用人人币</text>
+  </view>
+  <view class="list">
+    <text class="title">人人币明细</text>
+    <view class="list_item" wx:for="{{list}}" wx:key="id">
+      <image src="{{item.src}}" mode="widthFix"></image>
+      <view>
+        <text>{{item.info}}</text>
+        <text class="time">{{item.time}}</text>
+      </view>
+      <text class="r {{item.price>0?'colorAdd':''}}">{{item.price>0?"+":""}}{{item.price}}</text>
+    </view>
+  </view>
+</view>

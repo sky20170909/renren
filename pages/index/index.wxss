@@ -1,0 +1,336 @@
+/**index.wxss**/
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+#circle{
+  display:inline-block;
+  width:400rpx;
+  height:240rpx;
+  overflow: hidden;
+  vertical-align: top;
+  z-index: 0;
+}
+.banner{
+  font-size: 0;
+}
+.circle {
+  position:absolute;
+  left:0rpx;
+  right:0;
+  margin:auto;
+  top:-31rpx;
+}
+#singIn .textInfo{
+  width:400rpx;
+  text-align: center;
+  margin-top:-200rpx;
+  line-height:1.5;
+}
+#circle .bg>text{
+  font-size: 20rpx;
+  color:red;
+  text-align:left;
+  margin-left:100rpx;
+}
+
+.banner{
+  width:100%;
+}
+.note{
+  height:60rpx;
+  line-height: 60rpx;
+  background: #f2f2f2;
+  color:#e22844;
+  font-size: 28rpx;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.note image{
+  width:32rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+}
+#singIn{
+  /* height:450rpx; */
+  background: #fff;
+  margin-bottom: 10rpx;
+  padding: 20rpx;
+  position:relative;
+  z-index: 1;
+}
+
+#singIn .top>view{
+  display: inline-block;
+  font-size:24rpx;
+  vertical-align: top;
+}
+#singIn .top .num{
+  color:#e22844;
+  font-size: 36rpx;
+  margin-left: 10rpx;
+}
+.schedule{
+  width:300rpx;
+  background-size:cover;
+  position: relative; 
+  text-align: center;
+  padding-top:20rpx;
+
+}
+.schedule .active{
+  margin-top:-128rpx; 
+  width:195rpx;
+}
+.StepNum{
+  font-size: 32rpx;
+}
+.schedule text{
+  display: block;
+  font-size:28rpx;
+}
+.schedule .text,.schedule .texts{
+  color:#999;
+  font-size: 22rpx;
+}
+.title{
+  width:100%;
+  height:60rpx;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 60rpx;
+  color:#333;
+  margin-bottom: 10rpx;
+  position: relative;
+}
+.title image{
+  width:100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.title text{
+  position: absolute;
+  top:0;
+  left:calc(50% - 64rpx);
+}
+.singIn{
+  position: absolute;
+  top:100rpx;
+  right:0;
+  text-align: right;
+}
+.singIn text{
+  margin-right:20rpx; 
+}
+.singIn image{
+  width:200rpx;
+  display: block
+}
+.bottom{
+  width:100%;
+  text-align: center;
+  margin-top: 10rpx;
+}
+.btn{
+  width:540rpx;
+  height:80rpx;
+  line-height:80rpx;
+  text-align:center;
+  background:#e1203d;
+  border-radius:50rpx;
+  color:#fff;
+  font-size:28rpx;
+  z-index:3;
+  margin-top:20rpx;
+  margin-left: 85rpx;
+}
+.bottom text{
+  color:red;
+  font-size: 20rpx;
+  margin-left:-50rpx; 
+}
+.list{
+  background: #f2f2f2;
+  padding: 20rpx;
+  font-size: 26rpx;
+}
+.list_item{
+  width:345rpx;
+  background: #fff;
+  height:460rpx;
+  box-shadow: 5rpx 5rpx 5rpx #dadada;
+  margin-bottom: 20rpx;
+  display: inline-block;
+  
+}
+.list_item:nth-child(2n){
+  margin-left: 20rpx;
+}
+.list_item image{
+  width:100%;
+}
+.price{
+  color:#e22844;
+}
+.info{
+  padding: 0 20rpx;
+}
+.unit{
+  color:#e22844;
+  font-size: 20rpx;
+}
+.r{
+  color:#999;
+  font-size: 20rpx;
+  margin-top:20rpx; 
+}
+.uName{
+  font-size: 28rpx;
+}
+.model{
+  position:fixed;
+  background: #4c4c4c;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  text-align: center;
+  transition: all .3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.model .box{
+  width:600rpx;
+  height:640rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding:40rpx;
+  box-sizing: border-box;
+  position: relative; 
+}
+.model .box .close{
+  position:absolute;
+  width:50rpx;
+  top:20rpx;
+  right:20rpx;
+  margin:0;
+}
+.model .box text{
+  color:#999;
+  display: block;
+  font-size: 24rpx;
+}
+.model .box .title{
+  color:#333;
+  font-size: 44rpx;
+}
+.model .box image{
+  margin-top: 40rpx;
+  width:310rpx;
+
+  z-index: 1;
+}
+.model .box .day{
+  position: absolute;
+  font-size: 50rpx;
+  color:#fff;
+  top:310rpx;
+  width:100%;
+  text-align: center;
+  margin-left: -60rpx;
+  z-index: 2;
+  transform: rotate(-30deg)
+}
+.model .box .btn_model{
+  width:420rpx;
+  margin: 0 auto;
+  height:100rpx;
+  background: #fc7b7a;
+  border-radius: 50rpx;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  padding-top: 10rpx;
+}
+.model .box .btn_model text{
+  color:#ffbab2;
+  font-size: 24rpx;
+}
+.model .box .btn_model .top{
+  color:#fff;
+  font-size: 42rpx;
+}
+.step{
+  margin-top: 80rpx;
+}
+.step>image{
+  width:460rpx;
+  top:0;
+  left:145rpx;
+  position: absolute;
+}
+.renNum{
+  margin-left: 40rpx;
+}
+.step .img,.step .active_img{
+  position: absolute;
+  top:240rpx;
+  left:100rpx;
+  overflow: hidden;
+  height:60rpx;
+  text-align: left;
+}
+.step .img image,.step .active_img image{
+  width:60rpx;
+  margin-right: 10rpx;
+}
+.days{
+  padding-top:50rpx;
+  font-size:28rpx;
+  color: #999;
+  text-align: left;
+}
+.days text{
+  margin-right: 52rpx;
+}
+.days text:first-child{
+  margin-left: 150rpx;
+}
+.days text.active{
+  color:#fb3450;
+}
+.model .bg>image{
+  width:80rpx;
+  height:80rpx;
+  position: absolute;
+  top:-40rpx;
+  right:-40rpx;
+}
+.model .info{
+  position: fixed;
+  bottom:40rpx;
+  left:180rpx;
+  color:#fff;
+}
+.link,.link_red{
+  position: absolute;
+  top:255rpx;
+  left:115rpx;
+  width:420rpx;
+  height:10rpx;
+  border-bottom: 10rpx solid #dadada;
+}
+.link_red{
+  border-bottom: 10rpx solid #fb3450;
+}
+.footer{
+  margin-top: 120rpx;
+}
+.bg .btn{
+  margin-left: 55rpx;
+}

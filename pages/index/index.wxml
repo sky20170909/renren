@@ -1,0 +1,68 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="banner">
+    <image src='img/banner@2x.png' mode="widthFix" class="banner"></image>
+  </view>
+  <view class="note">
+    <image src='img/ren.png' mode="widthFix"></image>
+    <text>步数换人人币—人人币换宝贝—白拿宝贝</text>
+  </view>
+  <view id="singIn" hidden='{{!hiddenModel}}'>
+    <view class="top">
+      <view>
+        <text>人人币:</text>
+        <text class="num">{{num}}</text>
+      </view>
+      <view class="schedule">
+        <view id="circle">
+          <canvas class="circle" style="width:400rpx; height:400rpx" canvas-id="canvasCircle"></canvas> 
+          <canvas class="circle" style="width:400rpx; height:400rpx;" canvas-id="canvasArcCir"></canvas>
+        </view>
+        <view class="textInfo">
+          <text>今日步数</text>
+          <text class="text">(次日清零)</text>
+          <text class="StepNum">{{StepNum}}</text>
+          <text class="texts">兑换上限30000步</text>
+        </view>
+      </view>
+      <view class="singIn">
+        <image src="img/singIn.png" mode="widthFix" bindtap='model'></image>
+        <text>连续签到{{day}}天</text>
+      </view>
+    </view>
+    <view class="bottom">
+      <text>点击兑换人人币</text>
+      <button class="btn" open-type="share">邀请新用户立得5人人币</button>
+    </view>
+  </view>
+  <view class="title">
+    <image src="img/bg.png" mode='widthFix'></image>
+    <text>白拿专区</text>
+  </view>
+  <view class="list">
+    <view  wx:for="{{list}}" wx:key="index" class="list_item" id="{{item.id}}" data-index="{{index}}" bindtap='detail'>
+      <image mode="widthFix" src="{{item.src}}"></image>
+      <view class="info">
+        <text class="uName">{{item.userName}}</text>
+        <view>
+          <text class="price">{{item.price}}</text>
+          <text class="unit">{{item.unit}}</text>
+          <text class="r">剩余:{{item.residue?item.residue:0}}件</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="model" hidden='{{hiddenModel}}'>
+    <view class="box">
+      <image src="img/close.png" mode="widthFix" class="close" bindtap='close'></image>
+      <text class="title">连续签到!</text>
+      <text>我的人人币{{num}}</text>
+      <image src="img/bg_img.png" mode="widthFix"></image>
+      <text class="day">{{day}}</text>
+      <view class="btn_model" bindtap="singIn">
+        <text class="top">{{isSingIn?'已签到'+day+'天':'马上签到'}}</text>
+        <text>+4人人币</text>
+      </view>
+    </view>
+  </view>
+</view>

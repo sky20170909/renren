@@ -1,0 +1,48 @@
+<!--pages/baby.wxml-->
+<view class="container">
+  <view class="tab">
+    <view class="{{state?'active':''}}" bindtap="chageState">已发货</view>
+    <view class="{{state?'':'active'}}" bindtap="chageState">待发货</view>
+  </view>
+  <view class="list {{state?'active':''}}">
+    <view class="list_item" wx:for="{{list_a}}" wx:key="id">
+      <image src="{{item.src}}" mode="widthFix"></image>
+      <view>
+        <text>{{item.pro_name}}</text>
+        <view>
+          <text class="price">{{item.price}}</text>
+          <text class="unit">人人币</text>
+        </view>
+      </view>
+      <text class="r btn">
+          已发货
+      </text>
+      <view wx:if="{{item.code}}" class="code">
+        <text>激活码:</text>
+        <text>{{item.code}}</text>
+        <text class="copy" bindtap='copyBtn' data-code="{{item.code}}">复制</text>
+      </view>
+    </view>
+  </view>
+   <view class="list {{state?'':'active'}}">
+    <view class="list_item" wx:for="{{list_b}}" wx:key="id">
+      <image src="{{item.src}}" mode="widthFix"></image>
+      <view>
+        <text>{{item.pro_name}}</text>
+        <view>
+          <text class="price">{{item.price}}</text>
+          <text class="unit">人人币</text>
+        </view>
+      </view>
+      <text class="r btn">
+          待发货
+      </text>
+      <view wx:if="{{item.code}}" class="code">
+        <text>激活码:</text>
+        <text>{{item.code}}</text>
+        <text class="copy"  bindtap='copyBtn' data-code="{{item.code}}">复制</text>
+      </view>
+    </view>
+  </view>
+  
+</view>

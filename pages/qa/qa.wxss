@@ -1,0 +1,37 @@
+.container{
+  font-size: 0;
+}
+.item-li{
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: 22rpx;
+  text-align: left;
+}
+.item-li .item-title{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-left: 38rpx;
+  box-sizing: border-box;
+
+}
+.item-li .item-content {
+  padding: 35rpx 38rpx;
+  box-sizing: border-box;
+  border-top: 1rpx solid #f0f0f0;
+ 
+  text-align: left;
+}
+.item-li .item-content text{
+  color: #4e4e4e;
+  font-size: 26rpx;
+  float:left;
+  margin-bottom: 35rpx;
+}
+.item-li .item-title text{
+  color: #000;
+  font-size: 28rpx;
+  float:left;
+}

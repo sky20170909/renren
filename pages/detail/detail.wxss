@@ -1,0 +1,118 @@
+/* pages/detail.wxss */
+.container{
+  font-size: 0
+}
+image{
+  width:100%;
+}
+.info{
+  margin-bottom: 20rpx;
+  background: #fff;
+  padding: 30rpx;
+  font-size: 24rpx;
+  color:rgb(153,153,153)
+}
+.info text{
+  vertical-align: middle;
+}
+.pro .r{
+  position: relative;
+  top:-20rpx;
+}
+.pro{
+  margin-bottom: 20rpx;
+}
+.pro_name{
+  font-size: 36rpx;
+  color:#333;
+}
+.price{
+  font-size: 48rpx;
+  vertical-align: text-bottom;
+}
+.price,.unit{
+  color:rgb(234,75,74)
+}
+.unit{
+  position: relative;
+  top:10rpx;
+}
+.info>.r{
+  position: relative;
+  top:20rpx;
+}
+.link{
+  border-bottom:2rpx solid rgb(153,153,153);
+  width:167rpx;
+  display:inline-block;
+  height:2rpx;
+  top:5rpx;
+  position:relative;
+  left:378rpx;
+}
+.btn{
+  display: inline-block;
+  height:100rpx;
+  line-height: 100rpx;
+  background: #fff;
+  font-size: 48rpx;
+  text-align: center;
+}
+.baiba{
+  width:460rpx;
+  background: #4b2b79;
+  color:#fff;
+}
+.share{
+  width:290rpx;
+}
+.share>image{
+  width:44rpx;
+  vertical-align: middle;
+}
+.model{
+  position:fixed;
+  background: #4c4c4c;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  text-align: center;
+  transition: all .3s linear;
+  padding-bottom: 200rpx;
+}
+/* .model image{
+  margin-top: 200rpx;
+  width:710rpx;
+} */
+.model .img{
+  position:absolute;
+  top:180rpx;
+  left:300rpx;
+  width:150rpx;
+}
+.model .bg{
+  width:500rpx;
+  margin:40rpx auto;
+}
+.model .code{
+  position: absolute;
+  top:650rpx;
+  width:150rpx;
+  height:150rpx;
+  left:300rpx;
+}
+.down{
+  width:500rpx;
+  margin: 20rpx auto;
+  position: absolute;
+  bottom: 300rpx;
+  left:125rpx;
+}
+.bg{
+  height:676rpx;
+}
+#canvas{
+  margin-left: 125rpx;
+  margin-top: 40rpx;
+}

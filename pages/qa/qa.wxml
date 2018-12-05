@@ -1,0 +1,10 @@
+<view class='container'>
+  <view class='item-li' wx:for="{{content}}" wx:key="{{item.id}}">
+    <view class='item-title' data-changeid="{{item.id}}" bindtap='showHide'>
+　　　　　<text>{{item.title}}</text>
+　　　</view>　　　　　
+　　　<view class='item-content' wx:if="{{item.shows}}">
+　　　　　<text>{{item.contents}}</text>
+　　　</view>
+　</view>
+</view>

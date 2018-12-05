@@ -1,0 +1,154 @@
+.top{
+  background-size:cover; 
+  width:100%;
+  height:360rpx;
+  text-align: center;
+  margin-top: -40rpx;
+ 
+}
+
+.top .img{
+  width:150rpx;
+  height:150rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top:80rpx;
+}
+.top image{
+  width:150rpx;
+  height:150rpx;
+  border-radius: 50%;
+  margin: 60rpx auto;
+}
+.obj{
+  width:710rpx;
+  height:160rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  text-align: center;
+  margin: -100rpx auto 0;
+  box-shadow: 1rpx 5rpx 3rpx #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.obj>view{
+  flex: 1;
+  border-right:1px solid #dadada;
+}
+.obj>view:last-child{
+  border:none;
+}
+.obj>view text{
+  font-size: 48rpx;
+}
+.obj>view .unit{
+  font-size: 24rpx;
+}
+.obj>view .bottom{
+  display: block;
+  font-size: 24rpx;
+  color:#999;
+}
+.baby{
+  width: 710rpx;
+  height:200rpx;
+  margin: 20rpx auto;
+  background: #fff;
+  border-radius: 20rpx;
+  box-shadow: 1rpx 5rpx 3rpx #eee;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.mybaby{
+  height:80rpx;
+  line-height: 80rpx;
+  border-bottom:1rpx solid #dadada;
+  font-size: 30rpx;
+  color:#333; 
+}
+.mybaby .r{
+  display: inline;
+  font-size: 24rpx;
+  color:#999;
+}
+.icon{
+  margin-left: 10rpx;
+  margin-top: 26rpx;
+}
+.goods{
+  display: flex
+}
+.goods view{
+  flex:1;
+  text-align: center;
+  padding-top: 20rpx;
+}
+.goods image{
+  width:47rpx;
+}
+.goods text{
+  display: block;
+  font-size: 24rpx;
+  color:#333;
+}
+.list{
+  width:710rpx;
+  margin: 20rpx auto;
+  border-radius: 20rpx;
+  box-shadow: 1rpx 5rpx 3rpx #eee;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+  height:auto;
+}
+.list_item{
+  padding-left:14rpx;
+  border-bottom:1rpx solid #e1e1e1;
+  height:80rpx;
+  line-height: 80rpx;
+  box-sizing: border-box;
+  background: #fff;
+  text-align: left;
+  position: relative;
+}
+.button-hover{
+  color:#333;
+}
+.list_item:last-child{
+  border:none;
+}
+.list_item .img{
+  width:40rpx;
+  vertical-align: middle;
+  margin-right: 25rpx;
+}
+.list_item text{
+  font-size: 24rpx;
+}
+button{
+  text-align: left;
+  padding: 0;
+  padding-left: 14rpx;
+  font-size: 24rpx;
+  border:none;
+  height:80rpx;
+  line-height: 80rpx;
+  background: #fff;
+  border-color: #fff;
+}
+.button-hover{
+  border-color: #fff;
+  background: #fff;
+}
+button .img{
+  width:40rpx;
+  vertical-align: middle;
+  margin-right: 25rpx;
+}
+button::after{ border: none; }
+button text{
+  vertical-align: middle;
+}

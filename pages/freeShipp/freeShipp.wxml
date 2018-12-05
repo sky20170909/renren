@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="top">
+    <image src="img/bg.png" mode='widthFix'></image>
+    <text>首次购买赠送10000步，重复购买赠送1000步</text>
+    <view class="box">
+      <view class="title">
+        <image src="img/icon.png" mode="widthFix"></image>
+        <text>热销排行榜</text>
+      </view>
+      <view>
+        <view wx:for="{{rankList}}" wx:key="{{item.id}}" class="item_list" id="{{item.id}}" bindtap='navTo' data-index="{{index}}">
+          <image src="{{item.icon}}" mode="widthFix"></image>
+          <text class="rank">Top {{index+1}}</text>
+          <image src="{{item.src}}" mode="widthFix" class="pro"></image>
+          <text class="count">月销{{item.count||0}}件</text>
+          <text class="price">￥{{item.price}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view wx:for="{{pro_list}}" wx:key="{{item.id}}" class="pro_item" id="{{item.id}}" bindtap='navTo' data-index="{{index}}">
+      <image src="{{item.src}}" mode="widthFix"></image>
+      <text class="pro_name">{{item.pro_name}}</text>
+      <view class="bot">
+        <text class="pro_price">￥{{item.price}}</text>
+        <text class="pro_primeCost">￥{{item.primeCost}}</text>
+        <text class="num r">已售{{item.num}}件</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,136 @@
+/* pages/freeShipp.wxss */
+.top{
+  /* text-align: center; */
+  font-size: 32rpx;
+  color:#fff;
+  position: relative;
+}
+.top>image{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
+.top>text{
+  position: absolute;
+  width:100%;
+  text-align: center;
+  top:310rpx;
+}
+.top .box{
+  width:690rpx;
+  height:320rpx;
+  box-sizing: border-box;
+  background: #FFF;
+  border-radius: 12rpx;
+  position: absolute;
+  left:30rpx;
+  top:370rpx;
+  font-size: 24rpx;
+  color:#333;
+  padding: 10rpx 25rpx;
+}
+.box .title image{
+  width:40rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+}
+.box .item_list{
+  display: inline-block;
+  width:200rpx;
+  height: 200rpx;
+  box-sizing: border-box;
+  margin-right: 10rpx;
+  color:#fff;
+  position: relative;
+}
+.box .item_list:last-child{
+  margin: 0;
+}
+.box .item_list image{
+  width:60rpx;
+  position: absolute;
+  top:-2rpx;
+  left:-6rpx;
+  z-index: 2;
+}
+.box .item_list .rank{
+  font-size: 10rpx;
+  folor:#fff;
+  position: absolute;
+  z-index: 3;
+  transform:rotate(-45deg);
+  top:8rpx;
+  left:4rpx;
+}
+.box .item_list .pro{
+  width:200rpx;
+  border-radius: 10rpx;
+  z-index: 1;
+  top:0;
+  left:0;
+}
+.box .count{
+  width:180rpx;
+  height:28rpx;
+  background: rgba(0,0,0,.5);
+  color:#fff;
+  font-size: 24rpx;
+  text-align: center;
+  position: absolute;
+  top:150rpx;
+  line-height: 28rpx;
+  left:10rpx;
+  z-index: 2;
+}
+.box .price{
+  z-index: 2;
+  color:#e51717;
+  position: absolute;
+  bottom: -40rpx;
+  width:100%;
+  left:0;
+  text-align: center;
+  font-size: 28rpx;
+}
+.bottom{
+  padding-top: 750rpx;
+  padding-left: 20rpx;
+}
+.pro_item{
+  width:340rpx;
+  height:440rpx;
+  display: inline-block;
+  background: #fff;
+  margin-left: 10rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 10rpx 10rpx 5rpx #dadada;
+}
+.pro_item image{
+  width:100%;
+}
+.pro_item .pro_name{
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}
+.bot text{
+  font-size: 20rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+  margin-top: -30rpx;
+  display: inline-block;
+  color:#999;
+}
+.bot .num{
+  margin-right: 20rpx;
+  margin-top: 0;
+}
+.bot .pro_price{
+  color:#e51717;
+  font-size: 28rpx;
+  margin-right: 20rpx;
+}
+.pro_primeCost{
+  text-decoration:line-through;
+}

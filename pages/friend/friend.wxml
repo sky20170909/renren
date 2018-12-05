@@ -1,0 +1,11 @@
+<!--pages/list.wxml-->
+<view class="container">
+  <view wx:if="{{list.length > 0}}" class="list"> 
+    <view wx:for="{{list}}" wx:key="id"  class="list_item">
+      <image src="{{item.img}}"></image>
+      <text class="left">{{item.userName}}</text>
+      <text class="r">{{item.time}}</text>
+    </view>
+  </view>
+  <view wx:else> 2 </view>
+</view>

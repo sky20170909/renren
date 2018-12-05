@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="banner">
+    <image src="{{list[index].src}}" mode="widthFix"></image>
+  </view>
+  <view class="info">
+    <view class="pro">
+      <text class="pro_name">{{list[index].text}}</text>
+      <text class="r">
+        每人每天限兑1件
+      </text>
+    </view>
+    <text class="price">{{price}}</text>
+    <text class="unit">人人币</text>
+    <text class="r">原价: 10.00元</text>
+    <text class="link"></text>
+  </view>
+  <image src="img/detail.png" mode="widthFix"></image>
+  <view class="footer">
+    <view class="btn baiba" bindtap='orderDown'>白拿</view>
+    <view class="btn share" bindtap='share'>
+      <image src="img/share.png" mode="widthFix"></image>
+      <text>分享海报</text>
+    </view>
+  </view>
+  <view class="model" hidden='{{isModel}}'>
+    <view id="canvas" >
+      <canvas canvas-id="myCanvas"  style="width:500rpx; height:890rpx" ></canvas>
+    </view>
+    <button class="down" bindtap="savePic">下载</button>
+  </view>
+</view>

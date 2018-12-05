@@ -1,0 +1,19 @@
+/**app.wxss**/
+page{
+  background: #f2f2f2;
+  height:100%;
+}
+.container {
+  height: 100%;
+  background: #f7f7f7;
+} 
+.r{
+  float:right
+}
+.l{
+  float:left
+}
+.icon{
+  width:16rpx;
+  height:30rpx;
+}
